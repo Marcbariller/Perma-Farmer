@@ -7,7 +7,6 @@
         const MDP = '';
 
 		public function __construct(){
-
 		}
 
 		public static function addClient($firstname, $lastname, $email, $password){
@@ -34,28 +33,29 @@
             }
 		}
 
-		public static function newCart($id_client, $amount, $payment, $delivery){
+		public static function newCart($id_client, $amount){
 		    $db = new mysqli('localhost', static::USERNAME, static::MDP, static::DBNAME);
             $order_date = date("Y-m-d H:i:s");
-            $query= 'INSERT INTO cart (order_date, id_client, amount, payment, delivery) VALUES ("'.$order_date.'",'.$id_client.',"'.$amount.'","false","false")';
+            $query= 'INSERT INTO cart (order_date, id_client, amount, payment, delivery, prepared) VALUES ("'.$order_date.'",'.$id_client.',"'.$amount.'",0,0,0)';
             $result = $db->query($query);
 	        return $result;
 		}
         
-        public static function updateCart($id_cart, $amount, $payment, $delivery){
+        public static function updateCart($id_cart, $amount, $payment, $delivery, $prepared){
             $db = new mysqli('localhost', static::USERNAME, static::MDP, static::DBNAME);
             $query= 'UPDATE cart SET 
 	        	amount = "'.$amount.'",
 	        	payment = "'.$payment.'",
-	        	delivery = "'.$delivery.'" WHERE id = "'.$id_cart.'"
+	        	delivery = "'.$delivery.'",
+                prepared = "'.$prepared.'" WHERE id = "'.$id_cart.'"
 	        	';
             $result = $db->query($query);
 			return $result;
 		}
 
-		public static function addProduct($name, $type, $price){
+		public static function addProduct($name, $price, $weight, $stock){
 		    $db = new mysqli('localhost', static::USERNAME, static::MDP, static::DBNAME);
-            $query= 'INSERT INTO product (name, type, price) VALUES ("'.$name.'",'.$type.'")';
+            $query= 'INSERT INTO product (name, price, weight, stock) VALUES ("'.$name.'","'.$price.'","'.$weight.'","'.$stock.'")';
             $result = $db->query($query);
 	        return $result;
 		}
