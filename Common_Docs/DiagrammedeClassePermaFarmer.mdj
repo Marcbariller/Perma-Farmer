@@ -21,17 +21,6 @@
 					"defaultDiagram": true,
 					"ownedViews": [
 						{
-							"_type": "UMLAttributeView",
-							"_id": "AAAAAAFtPrPYiyeA6hg=",
-							"font": "Arial;13;0",
-							"left": 293,
-							"top": 146,
-							"width": 165.826171875,
-							"height": 13,
-							"text": "-id: int {unique}",
-							"horizontalAlignment": 0
-						},
-						{
 							"_type": "UMLClassView",
 							"_id": "AAAAAAFnMasa9/v87Fs=",
 							"_parent": {
@@ -583,7 +572,7 @@
 											"top": 86,
 											"width": 165.826171875,
 											"height": 13,
-											"text": "-firstname: String",
+											"text": "-firstName: String",
 											"horizontalAlignment": 0
 										},
 										{
@@ -600,7 +589,7 @@
 											"top": 101,
 											"width": 165.826171875,
 											"height": 13,
-											"text": "-lastname: String",
+											"text": "-lastName: String",
 											"horizontalAlignment": 0
 										},
 										{
@@ -993,7 +982,7 @@
 											"top": 170,
 											"width": 287.244140625,
 											"height": 13,
-											"text": "+DeleteClient(id_client: int)",
+											"text": "+DeleteClient(idClient: int)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1044,7 +1033,7 @@
 											"top": 215,
 											"width": 287.244140625,
 											"height": 13,
-											"text": "+UpdateClient(id_client: int, client: Client)",
+											"text": "+UpdateClient(idClient: int, client: Client)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1061,7 +1050,7 @@
 											"top": 230,
 											"width": 287.244140625,
 											"height": 13,
-											"text": "+DeleteCart(id_cart: int)",
+											"text": "+DeleteCart(idCart: int)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1078,7 +1067,7 @@
 											"top": 245,
 											"width": 287.244140625,
 											"height": 13,
-											"text": "+UpdateCart(id_cart: int, cart: Cart)",
+											"text": "+UpdateCart(idCart: int, cart: Cart)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1112,7 +1101,7 @@
 											"top": 275,
 											"width": 287.244140625,
 											"height": 13,
-											"text": "+DeleteProduct(id_product: int)",
+											"text": "+DeleteProduct(idProduct: int)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1129,7 +1118,7 @@
 											"top": 290,
 											"width": 287.244140625,
 											"height": 13,
-											"text": "+UpdateProduct(id_product: int, product: Product)",
+											"text": "+UpdateProduct(idProduct: int, product: Product)",
 											"horizontalAlignment": 0
 										}
 									],
@@ -1955,7 +1944,7 @@
 											"top": 374,
 											"width": 173.7734375,
 											"height": 13,
-											"text": "-order_date: String",
+											"text": "-orderDate: String",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1972,7 +1961,7 @@
 											"top": 389,
 											"width": 173.7734375,
 											"height": 13,
-											"text": "-id_client: int",
+											"text": "-idClient: int",
 											"horizontalAlignment": 0
 										},
 										{
@@ -3879,7 +3868,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFnMbM0D/yarb4="
 									},
-									"name": "firstname",
+									"name": "firstName",
 									"visibility": "private",
 									"type": "String"
 								},
@@ -3889,7 +3878,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFnMbM0D/yarb4="
 									},
-									"name": "lastname",
+									"name": "lastName",
 									"visibility": "private",
 									"type": "String"
 								},
@@ -4561,7 +4550,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFtP24NY5k2wlw="
 									},
-									"name": "id_client",
+									"name": "idClient",
 									"type": "int"
 								}
 							]
@@ -4622,7 +4611,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFtP3Nv4KFQQc8="
 									},
-									"name": "id_client",
+									"name": "idClient",
 									"type": "int"
 								},
 								{
@@ -4652,7 +4641,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFtP3Vf/qKg54Y="
 									},
-									"name": "id_cart",
+									"name": "idCart",
 									"type": "int"
 								}
 							]
@@ -4671,7 +4660,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFtP3XcSKO4TWM="
 									},
-									"name": "id_cart",
+									"name": "idCart",
 									"type": "int"
 								},
 								{
@@ -4722,7 +4711,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFtP3uikKjn864="
 									},
-									"name": "id_product",
+									"name": "idProduct",
 									"type": "int"
 								}
 							]
@@ -4741,7 +4730,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFtP3wtB6o1rPY="
 									},
-									"name": "id_product",
+									"name": "idProduct",
 									"type": "int"
 								},
 								{
@@ -4940,7 +4929,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFtPxdR6TsBNEA="
 							},
-							"name": "order_date",
+							"name": "orderDate",
 							"visibility": "private",
 							"type": "String"
 						},
@@ -4950,7 +4939,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFtPxdR6TsBNEA="
 							},
-							"name": "id_client",
+							"name": "idClient",
 							"visibility": "private",
 							"type": "int"
 						},
