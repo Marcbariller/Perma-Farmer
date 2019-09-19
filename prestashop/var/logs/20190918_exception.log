@@ -1,0 +1,2 @@
+*ERROR* 	v1.7.6.1	2019/09/18 - 13:40:14: Link to database cannot be established: SQLSTATE[HY000] [1049] Base 'perma_farmer' inconnue at line 127 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.6.1	2019/09/18 - 13:40:39: Link to database cannot be established: SQLSTATE[HY000] [1049] Base 'perma_farmer' inconnue at line 127 in file classes/db/DbPDO.php
